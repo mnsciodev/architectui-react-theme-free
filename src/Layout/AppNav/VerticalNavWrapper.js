@@ -10,6 +10,7 @@ import {
   FormsNav,
   WidgetsNav,
   ChartsNav,
+  UsersRolesNav
 } from "./NavItems";
 
 class Nav extends Component {
@@ -23,14 +24,16 @@ class Nav extends Component {
   render() {
     return (
       <Fragment>
-        <h5 className="app-sidebar__heading">Pro Version</h5>
-        <MetisMenu content={UpgradeNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
-          className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+        {/* <h5 className="app-sidebar__heading">Pro Version</h5> */}
+        {/* <MetisMenu content={UpgradeNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
+          className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/> */}
 
         <h5 className="app-sidebar__heading">Menu</h5>
         <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
           className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
 
+        <MetisMenu content={UsersRolesNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
+          className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
         <h5 className="app-sidebar__heading">UI Components</h5>
         <MetisMenu content={ComponentsNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
           className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>

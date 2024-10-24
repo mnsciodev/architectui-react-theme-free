@@ -8,8 +8,15 @@ export const UpgradeNav = [
 export const MainNav = [
     {
         icon: 'pe-7s-rocket',
-        label: 'Dashboard Example',
+        label: 'Dashboard',
         to: '#/dashboards/crm',
+    },
+];
+export const UsersRolesNav = [
+    {
+        icon: 'pe-7s-add-user',
+        label: 'Users & Roles',
+        to: '#/dashboards/UsersRoles',
     },
 ];
 export const ComponentsNav = [
